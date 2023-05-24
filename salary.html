@@ -1,0 +1,12 @@
+<script>
+    //Write a program that reads an employee's number, his/her worked hours number in a month and the amount he received per hour. Print the employee's number and salary that he/she will receive at end of the month, with two decimal places.
+
+    var numero, horasMes, valorTrabalho,salarioFinal;
+
+    numero = parseInt(prompt("Qual seu número de identificação?"));
+    horasMes = parseFloat(prompt("Quantas horas você trabalhou nesse mês?"));
+    valorTrabalho = parseFloat(prompt("Qual o valor do seu trabalho por hora?"));
+
+    salarioFinal = valorTrabalho * horasMes;
+    document.write("Numero funcionário: "+ numero+ "<br> Salario = R$ "+salarioFinal.toFixed(2));
+</script>
