@@ -1,2 +1,2 @@
 # beecrowd
-Exercícios do site Beecrowd resolvidos em js.
+Exercícios do site Beecrowd resolvidos em JavaScript dentro de um arquivo HTML.
