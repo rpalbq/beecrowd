@@ -1,0 +1,25 @@
+<script>
+    // Read an integer value, which is the duration in seconds of a certain event in a factory, and inform it expressed in hours:minutes:seconds.
+
+    var valor, qntMinutos, qntHoras, qntSegundos;
+
+    valor = parseInt(prompt("Qual é o valor do evento em segundos?"));
+
+    if (valor < 60) {
+        qntSegundos = valor;
+        document.write("00:00:" + qntSegundos.toFixed(0));
+    }
+    if (valor >= 60 && valor < 3600) {
+        qntMinutos = (valor / 60) | 0;
+        qntSegundos = valor % 60;
+        document.write("00:" + qntMinutos.toFixed(0) + ":" + qntSegundos.toFixed(0));
+
+    } else if (valor >= 3600) {
+        qntHoras = (valor / 3600) | 0;
+        qntMinutos = ((valor % 3600) / 60) | 0;
+        qntSegundos = valor % 60;
+
+        document.write(qntHoras.toFixed(0) + ":" + qntMinutos.toFixed(0) + ":" + qntSegundos.toFixed(0));
+ }
+
+</script>
