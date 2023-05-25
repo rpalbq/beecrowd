@@ -1,0 +1,38 @@
+<script>
+    // In this problem you have to read an integer value and calculate the smallest possible number of banknotes in which the value may be decomposed. The possible banknotes are 100, 50, 20, 10, 5, 2 e 1. Print the read value and the list of banknotes.
+
+    var valor, notas100, notas50, notas20, notas10, notas5, notas2, moedas1, resto;
+
+    valor = parseInt(prompt("Qual o valor que você quer?"));
+
+    notas100 = (valor/100) | 0;
+    resto = valor % 100;
+
+    notas50 = (resto/50) | 0;
+    resto = resto % 50;
+    
+    notas20 = (resto/20)| 0;
+    resto = resto % 20;
+
+    notas10 = (resto/10)| 0;
+    resto = resto % 10;
+
+    notas5 = (resto/5)| 0;
+    resto = resto % 5;
+
+    notas2 = (resto/2)| 0;
+    resto = resto % 2;
+
+    moedas1 = resto;
+
+    document.write("O valor pedido foi: "+valor+"<br>");
+    document.write(notas100 +" notas de 100 <br>");
+    document.write(notas50 +" notas de 50 <br>");
+    document.write(notas20 +" notas de 20 <br>");
+    document.write(notas10 +" notas de 10 <br>");
+    document.write(notas5 +" notas de 5 <br>");
+    document.write(notas2 +" notas de 2 <br>");
+    document.write(moedas1 +" moedas de 1");
+
+
+</script>
