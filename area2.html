@@ -1,0 +1,27 @@
+<script>
+    /* Make a program that reads three floating point values: A, B and C. Then, calculate and show:
+    a) the area of the rectangled triangle that has base A and height C.
+    b) the area of the radius's circle C. (pi = 3.14159)
+    c) the area of the trapezium which has A and B by base, and C by height.
+    d) the area of ​​the square that has side B.
+    e) the area of the rectangle that has sides A and B.*/
+
+    var A, B,C, areaTriangRet, areaCircRaio, areaTrapezio, areaQuadrado, areaRet;
+
+    A = parseFloat(prompt("Qual é o valor do A?"));
+    B = parseFloat(prompt("Qual é o valor do B?"));
+    C = parseFloat(prompt("Qual é o valor do C?"));
+
+    areaTriangRet = (A * C) / 2;
+    areaCircRaio =   3.14159 * C**2;
+    areaTrapezio = ((A + B) * C) / 2;
+    areaQuadrado = B**2;
+    areaRet = A * B;
+
+    document.write ("Área do triângulo retângulo: "+areaTriangRet.toFixed(3)+"<br>");
+    document.write ("Área do círculo: "+areaCircRaio.toFixed(3)+"<br>");
+    document.write ("Área do trapézio: "+areaTrapezio.toFixed(3)+"<br>");
+    document.write ("Área do quadrado: "+areaQuadrado.toFixed(3)+"<br>");
+    document.write ("Área do retângulo: "+areaRet.toFixed(3));
+
+</script>
