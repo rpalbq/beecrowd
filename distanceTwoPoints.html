@@ -1,0 +1,13 @@
+<script>
+    //Read the four values corresponding to the x and y axes of two points in the plane, p1 (x1, y1) and p2 (x2, y2) and calculate the distance between them, showing four decimal places after the comma. 
+
+    var x1, x2, y1, y2, distance;
+
+    x1 = parseFloat(prompt("Qual é o valor de X1?"));
+    x2 = parseFloat(prompt("Qual é o valor de X2?"));
+    y1 = parseFloat(prompt("Qual é o valor de Y1?"));
+    y2 = parseFloat(prompt("Qual é o valor de Y2?"));
+
+    distance = Math.sqrt((x2-x1)** 2 + (y2-y1)**2);
+    document.write("A distancia é: "+distance.toFixed(4));
+</script>
