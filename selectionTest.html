@@ -1,0 +1,18 @@
+<script>
+    //Read 4 integer values A, B, C and D. Then if B is greater than C and D is greater than A and if the sum of C and D is greater than the sum of A and B and if C and D were positives values and if A is even, write the message “Valores aceitos” (Accepted values). Otherwise, write the message “Valores nao aceitos” (Values not accepted).
+    // Leia 4 valores inteiros A, B, C e D. Em seguida, se B for maior que C e D for maior que A, e se a soma de C e D for maior que a soma de A e B, e se C e D forem valores positivos e se A for par, escreva a mensagem "Valores aceitos". Caso contrário, escreva a mensagem "Valores nao aceitos".
+
+    var A, B, C, D;
+
+    A = parseInt(prompt("Digite um valor para A"));
+    B = parseInt(prompt("Digite um valor para B"));
+    C = parseInt(prompt("Digite um valor para C"));
+    D = parseInt(prompt("Digite um valor para D"));
+
+    if ( B>C && D>A && ((C+D) > (A+B)) && C> 0 && D >0 && A % 2 == 0){
+        document.write("Valores Aceitos");
+    } else {
+        document.write("Valores não aceitos");
+    }
+
+</script>
