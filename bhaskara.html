@@ -1,0 +1,24 @@
+<script>
+    // Read 3 floating-point numbers. After, print the roots of bhaskara’s formula. If it's impossible to calculate the roots because a division by zero or a square root of a negative number, presents the message “Impossivel calcular”.
+
+    var valor1, valor2, valor3, delta, raiz1, raiz2;
+
+    valor1 = parseFloat(prompt("Digite o valor:"));
+    valor2 = parseFloat(prompt("Digite o valor:"));
+    valor3 = parseFloat(prompt("Digite o valor:"));
+
+    if (valor1 == 0 || valor2 == 0 || valor3 == 0) {
+        document.write("Inválido, não é possível calcular");
+    } else {
+        delta = (valor2 ** 2) - (4 * valor1 * valor3);
+        if (delta < 0) {
+            document.write("Impossível calcular");
+        } else {
+            raiz1 = (-valor2 + Math.sqrt(delta)) / (2 * valor1);
+            raiz2 = (-valor2 - Math.sqrt(delta)) / (2 * valor1);
+            document.write(raiz1.toFixed(5) + "<br>" + raiz2.toFixed(5));
+        }
+    }
+
+</script>
+
