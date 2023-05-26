@@ -1,0 +1,14 @@
+<script>
+    //Read an integer value corresponding to a person's age (in days) and print it in years, months and days, followed by its respective message “ano(s)”, “mes(es)”, “dia(s)”.
+   
+    var idadeDias, qntAnos, qntMeses, qntDias;
+
+    idadeDias = parseInt(prompt("Qual é a sua idade em dias?"));
+
+    qntAnos = Math.floor(idadeDias / 365);
+    qntMeses = Math.floor((idadeDias % 365) / 30);
+    qntDias = (idadeDias % 365) % 30;
+
+    document.write(qntAnos + " ano(s), " + qntMeses + " mês(es), " + qntDias + " dia(s)");ment.write("anos (0), meses(0), dias ("+idadeDias+")");
+    
+</script>
