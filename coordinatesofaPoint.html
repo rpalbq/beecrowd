@@ -1,0 +1,23 @@
+<script>
+    //Write an algorithm that reads two floating values (x and y), which should represent the coordinates of a point in a plane. Next, determine which quadrant the point belongs, or if you are at one of the Cartesian axes or the origin (x = y = 0).
+
+    var x,y;
+
+    x = parseFloat(prompt("Qual o valor do X?"));
+    y = parseFloat(prompt("Qual o valor do Y?"));
+
+    if (x > 0 && y > 0){
+        document.write("Q1");
+    } else if (x < 0 && y > 0){
+        document.write("Q2");
+    } else if (x < 0 && y < 0){
+        document.write("Q3");
+    } else if (x > 0 && y < 0){
+        document.write("Q4");
+    } else {
+        document.write("Origem");
+    }
+    
+    
+
+</script>
