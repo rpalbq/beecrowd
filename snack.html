@@ -1,0 +1,49 @@
+<script>
+    //Using the following table, write a program that reads a code and the amount of an item. After, print the value to pay. This is a very simple program with the only intention of practice of selection commands.
+
+    /* CODE          SPECIFICATION           PRICE 
+        1           Cachorro Quente          R$4.00
+        2           X-Salada                 R$4.50
+        3           X-Bacon                  R$5.00
+        4           Torrada Simples          R$2.00
+        5           Refrigerante             R$1.50 */
+        
+
+    var id, qntd, precoTotal;
+
+
+    document.write ("CODE          SPECIFICATION           PRICE<br>");
+    document.write (" 1           Cachorro Quente          R$4.00<br>");
+    document.write (" 2           X-Salada                 R$4.50<br>");
+    document.write (" 3           X-Bacon                  R$5.00<br>");
+    document.write (" 4           Torrada Simples          R$2.00<br>");
+    document.write (" 5           Refrigerante             R$1.50<br>");
+    document.write ("<br>");
+  
+
+    id = parseInt(prompt("Digite o id do produto que você quer:"));
+    qntd = parseInt(prompt("Qual a quantidade do produto que você quer?"));
+
+    switch (id) {
+        case 1:
+            precoTotal = 4.00 * qntd;
+            break;
+        case 2: 
+            precoTotal = 4.50 * qntd;
+            break
+        case 3:
+            precoTotal = 5.00 * qntd;
+            break;
+        case 4:
+            precoTotal = 2.00 * qntd;
+            break;
+        case 5:
+            precoTotal = 1.50 * qntd;
+            break;
+    default:
+        document.write("ID inválido");
+        break;
+    }
+
+    document.write("O valor total da sua compra foi de: R$"+precoTotal.toFixed(2));
+</script>
