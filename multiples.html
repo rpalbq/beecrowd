@@ -1,0 +1,21 @@
+<script>
+    //Read two integer values (A and B). After, the program should print the message "Sao Multiplos" (are multiples) or "Nao sao Multiplos" (aren’t multiples), corresponding to the read values.
+
+    var a, b;
+    var multiplo = false;
+
+    a = parseInt(prompt("Digite um número inteiro:"));
+    b = parseInt(prompt("Digite outro número inteiro:"));
+
+    for(var cont = a; cont <= b; cont = cont + a){
+        if (cont == b){
+            multiplo = true;
+        }
+    }
+
+    if (multiplo == true) {
+        document.write("São multiplos!");
+    } else {
+        document.write("Não são multiplos");
+    }
+</script>
