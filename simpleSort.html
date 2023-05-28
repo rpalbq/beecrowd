@@ -1,0 +1,35 @@
+<script>
+    // Read three integers and sort them in descending order. After, print these values in descending order, a blank line and then the values in the sequence as they were readed.
+
+    var A, B, C;
+
+    A = parseInt(prompt("Digite um número inteiro:"));
+    B = parseInt(prompt("Digite um número inteiro:"));
+    C = parseInt(prompt("Digite um número inteiro:"));
+
+    if (A>B && A> C){
+        if (B>C){
+            document.write(A+"<br>"+B+"<br>"+C+"<br><br>");
+            document.write(A+"<br>"+B+"<br>"+C);
+        } else {
+            document.write(A+"<br>"+C+"<br>"+B+"<br><br>");
+            document.write(A+"<br>"+B+"<br>"+C);
+        }
+    } else if (B>A && B>C){
+        if (A>C){
+            document.write(B+"<br>"+A+"<br>"+C+"<br><br>");
+            document.write(A+"<br>"+B+"<br>"+C);
+        } else {
+            document.write(B+"<br>"+C+"<br>"+A+"<br><br>");
+            document.write(A+"<br>"+B+"<br>"+C);
+        }
+    } else {
+        if (A>B){
+            document.write(C+"<br>"+A+"<br>"+B+"<br><br>");
+            document.write(A+"<br>"+B+"<br>"+C);
+        } else {
+            document.write(C+"<br>"+B+"<br>"+A+"<br><br>");
+            document.write(A+"<br>"+B+"<br>"+C);
+        }
+    }
+</script>
