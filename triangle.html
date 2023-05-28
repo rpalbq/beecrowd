@@ -1,0 +1,21 @@
+<script>
+    //Read three point floating values (A, B and C) and verify if is possible to make a triangle with them. If it is possible, calculate the perimeter of the triangle and print the message:
+// como saber se da pra formar um t? 1. todos lados tem q ser maior que 0 e a soma de 2 lados tem q ser maior que o outro lado que sobrou 
+
+    var a,b,c;
+
+    a = parseFloat(prompt("Digite o valor do lado A"));
+    b = parseFloat(prompt("Digite o valor do lado b:"));
+    c = parseFloat(prompt("Digite o valor do lado b:"))
+
+    if (a > 0 && b > 0 && c > 0 && a+b > c && b+c > a && c+a > b) {
+        document.write("É possivel formar um triângulo!!!<br>g");
+        var perimetro = a + b + c;
+        document.write("Perimetro: "+perimetro.toFixed(2));
+
+    } else {
+        document.write("Não é possível formar um triângulo!<br>");
+        var area = (( a + b) *c) / 2;
+        document.write("Area = "+area.toFixed(2));
+    }
+;</script>
