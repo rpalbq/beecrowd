@@ -1,0 +1,26 @@
+<script>
+    //Read the employee's salary, calculate and print the new employee's salary, as well the money earned and the increase percentual obtained by the employee, with corresponding messages in Portuguese, as the below example. 
+
+    var salario, reajuste, novosalario;
+
+    salario = parseFloat(prompt("Qual é o seu salário?"));
+
+    if (salario <= 400.00) {
+        reajuste = salario * 0.15;
+
+    } else if ( salario > 400.00 && salario <= 800.00){
+        reajuste = salario * 0.12;
+    } else if (salario > 800.00 && salario <= 1200.00 ){
+        reajuste = salario * 0.10;
+    } else if ( salario > 1200 && salario <=  2000.00) {
+        reajuste = salario * 0.07;
+    } else {
+        reajuste = salario * 0.04;
+    }
+
+    novosalario = salario + reajuste;
+
+    document.write("Novo salario: "+novosalario.toFixed(2)+"<br>");
+    document.write("Reajuste ganho: "+reajuste.toFixed(2)+"<br>");
+    document.write("Percentual:"+((reajuste/salario)* 100).toFixed(0)+"%");
+</script>
