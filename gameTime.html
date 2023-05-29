@@ -1,0 +1,20 @@
+<script>
+    //Read the start time and end time of a game, in hours. Then calculate the duration of the game, knowing that the game can begin in a day and finish in another day, with a maximum duration of 24 hours. The message must be printed in portuguese “O JOGO DUROU X HORA(S)” that means “THE GAME LASTED X HOUR(S)”
+
+    var horaInicio, horaFim, duracao = 0;
+
+    horaInicio = parseInt(prompt("Digite o horário inicial do jogo"));
+    horaFim = parseInt(prompt("Digite o horário final:"));
+
+    if (horaFim < horaInicio) {
+    duracao = (horaFim + 24) - horaInicio;
+    } else if (horaFim > horaInicio) {
+    duracao = horaFim - horaInicio;
+    } else {
+    duracao = 24;
+    }
+
+    document.write("Duração do jogo: " + duracao + " hora(s)");
+
+    
+</script>

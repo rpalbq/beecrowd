@@ -1,0 +1,34 @@
+<script>
+
+    //Read the start time and end time of a game, in hours and minutes (initial hour, initial minute, final hour, final minute). Then print the duration of the game, knowing that the game can begin in a day and finish in another day,
+
+
+var horaInicial, minutoInicial, horaFinal, minutoFinal;
+
+horaInicial = parseInt(prompt("Digite a hora inicial do jogo"));
+minutoInicial = parseInt(prompt("Digite os minutos iniciais do jogo"));
+horaFinal = parseInt(prompt("Digite a hora final do jogo"));
+minutoFinal = parseInt(prompt("Digite os minutos finais do jogo"));
+
+var duracaoHora = 0;
+var duracaoMinuto = 0;
+
+if (horaFinal < horaInicial || (horaFinal == horaInicial && minutoFinal < minutoInicial)) {
+  horaFinal += 24;
+}
+
+duracaoHora = horaFinal - horaInicial;
+duracaoMinuto = minutoFinal - minutoInicial;
+
+if (duracaoMinuto < 0) {
+  duracaoHora -= 1;
+  duracaoMinuto += 60;
+}
+
+if (duracaoHora == 0 && duracaoMinuto == 0) {
+  duracaoHora = 24;
+}
+
+document.write("A duração do jogo foi de " + duracaoHora + " hora(s) e " + duracaoMinuto + " minuto(s)");
+
+</script>
