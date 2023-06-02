@@ -1,11 +1,10 @@
 <script>
     var  individual;
-    var numerosMeses = [1,2,3,4,5,6,7,8,9,10,11,12];
     var stringMeses = ['JANEIRO','FEVEREIRO','MARÇO','ABRIL','MAIO','JUNHO','JULHO','AGOSTO','SETEMBRO','OUTUBRO','NOVEMBRO','DEZEMBRO'];
 
     individual = parseInt(prompt("Digite o número do mês que você quer"));
 
-    for(var indice = 0; indice < numerosMeses.length; indice++) {
+    for(var indice = 0; indice < stringMeses.length; indice++) {
         if (indice == individual) {
             document.write(stringMeses[indice - 1]);
         }
