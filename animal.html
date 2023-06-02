@@ -1,0 +1,41 @@
+<script>
+
+var descricao1, descricao2, descricao3;
+
+descricao1 = prompt("Digite a 1ª descrição:");
+descricao2 = prompt("Digite a 2ª descrição:");
+descricao3 = prompt("Digite a 3ª descrição:");
+
+if (descricao1 == 'vertebrado' || descricao2 == 'vertebrado' || descricao3 == 'vertebrado') {
+   if (descricao1 == 'ave' || descricao2 == 'ave' || descricao3 == 'ave') {
+      if (descricao1 == 'carnivoro' || descricao2 == 'carnivoro' || descricao3 == 'carnivoro') {
+         document.write("ÁGUIA");
+      } else {
+         document.write("POMBA");
+      }
+   } else if (descricao1 == 'mamifero' || descricao2 == 'mamifero' || descricao3 == 'mamifero') {
+      if (descricao1 == 'onivoro' || descricao2 == 'onivoro' || descricao3 == 'onivoro') {
+         document.write("HOMEM");
+      } else {
+         document.write("VACA");
+      }
+   }
+}
+
+if (descricao1 == 'invertebrado' || descricao2 == 'invertebrado' || descricao3 == 'invertebrado') {
+   if (descricao1 == 'inseto' || descricao2 == 'inseto' || descricao3 == 'inseto') {
+      if (descricao1 == 'hematofago' || descricao2 == 'hematofago' || descricao3 == 'hematofago') {
+         document.write("PULGA");
+      } else {
+         document.write("LAGARTA");
+      }
+   } else if (descricao1 == 'anelideo' || descricao2 == 'anelideo' || descricao3 == 'anelideo') {
+      if ((descricao1 == 'onivoro' || descricao2 == 'onivoro' || descricao3 == 'onivoro') && 
+         (descricao1 == 'anelideo' || descricao2 == 'anelideo' || descricao3 == 'anelideo')) {
+         document.write("MINHOCA");
+      } else {
+         document.write("SANGUESSUGA");
+      }
+   }
+}
+</script>

@@ -1,0 +1,22 @@
+<script>
+    // Desenvolva um programa que leia 100 números inteiros (assuma que os números informados variam apenas entre 0 a 100) e informe qual é o maior, o menor e a média aritmética destes números.
+
+    var numero;
+    var maior = 0; 
+    var menor = 100;
+    var soma = 0;
+
+    for(var contador = 0; contador < 5; contador++){
+        numero = parseInt(prompt("Digite um número:"));
+        if (numero > maior) {
+            maior = numero;
+        } if ( numero < menor){
+            menor = numero;
+        }
+        soma = soma + numero;
+    }
+    
+    var media = soma / 100;
+    document.write("maior"+maior+"<br> menor"+menor+"<br> soma"+soma+"<br> media"+media);
+
+</script>
