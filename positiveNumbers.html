@@ -1,0 +1,16 @@
+<script>
+    //Write a program that reads 6 numbers. These numbers will only be positive or negative (disregard null values). Print the total number of positive numbers.
+
+    var numero;
+    var qntPositivo = 0;
+
+    for(var contador = 0; contador < 6; contador++){
+        numero = parseFloat(prompt("Digite um numero:"));
+        if (numero !== null && numero >= 0) {
+            qntPositivo = qntPositivo + 1;
+        }
+    }
+
+    document.write(qntPositivo+" números positivos");
+
+</script>
