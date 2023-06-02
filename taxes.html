@@ -1,0 +1,28 @@
+<script>
+   /* Em um país imaginário chamado Lisarb, todas as pessoas estão muito felizes em pagar seus impostos porque sabem que não existem políticos corruptos e que os impostos são usados em benefício da população, sem qualquer desvio de verbas. A moeda desse país é o Rombus, cujo símbolo é R$.
+    Leia um valor com 2 dígitos após o ponto decimal, equivalente ao salário de um habitante de Lisarb. Em seguida, imprima o valor devido que essa pessoa deve pagar de impostos, de acordo com a tabela abaixo.
+
+    Tabela de Impostos:
+    Salários até R$ 2.000,00: Isento de impostos
+    Salários de R$ 2.000,01 até R$ 3.000,00: 8% de imposto
+    Salários de R$ 3.000,01 até R$ 4.500,00: 18% de imposto
+    Salários acima de R$ 4.500,00: 28% de imposto */
+
+    var salario, imposto;
+
+    salario = parseFloat(prompt("Digite o seu salário:"));
+
+    if (salario <= 2000.00) {
+        imposto = 0;
+    } else if (salario <= 3000.00) {
+        imposto = (salario - 2000.00) * 0.08;
+    } else if (salario <= 4500.00) {
+        imposto = (salario - 3000.00) * 0.18;
+    } else {
+        imposto = (salario - 4500.00) * 0.28;
+    }
+
+    document.write("Você deve pagar R$" + imposto.toFixed(2));
+
+
+</script>
