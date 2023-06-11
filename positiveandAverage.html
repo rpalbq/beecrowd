@@ -1,0 +1,13 @@
+<script>
+    var numPositivo, somaNum = 0, qntPositivo = 0;
+    for (var contador = 0; contador < 6; contador++){
+        numPositivo = parseFloat(prompt("Digite um valor:"));
+        if (numPositivo > 0){
+            qntPositivo =  qntPositivo + 1;
+            somaNum = somaNum + numPositivo;
+        }
+    }
+
+    var media = somaNum / qntPositivo;
+    document.write(qntPositivo+" valores positivos <br> A média foi de: "+media.toFixed(1));
+</script>
