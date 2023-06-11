@@ -1,0 +1,33 @@
+<script>
+    var numero;
+    var qntPar = 0;
+    var qntImpar = 0;
+    var qntPositivo = 0;
+    var qntNegativo = 0;
+
+    for (var contador = 0; contador < 5; contador++) {
+        numero = parseInt(prompt("Digite um número:"));
+
+        if (numero % 2 === 0) {
+            qntPar++;
+        }
+
+        if (numero % 2 !== 0) {
+            qntImpar++;
+        }
+
+        if (numero > 0) {
+            qntPositivo++;
+        }
+
+        if (numero < 0) {
+            qntNegativo++;
+        }
+    }
+
+    document.write("Quantidade de números pares: " + qntPar+"<br>");
+    document.write("Quantidade de números ímpares: " + qntImpar+"<br>");
+    document.write("Quantidade de números positivos: " +qntPositivo+"<br>");
+    document.write("Quantidade de números negativos: " +qntNegativo);
+
+</script>
